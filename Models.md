@@ -37,3 +37,13 @@ Signifie que le champ ainsi typé est optionnel.
 }  
 
 ### Address
+
+{  
+  "quality": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "street": String,  
+  "complement": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "zipCode": String,  
+  "city": String,  
+  "state": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "country": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String])  
+}  
