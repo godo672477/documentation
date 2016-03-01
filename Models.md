@@ -6,7 +6,7 @@ Identifiant garanti unique en utilisant la norme [GUUID](https://fr.wikipedia.or
 *Attention !* Si le format n'est pas bon, l'évènement sera rejeté.  
 ex: `8074964f-c633-3c2a-055f-bbaf8ca8181b`
 
-### List
+### `List`
 
 équivalent d'un array `[]`
 
@@ -36,7 +36,7 @@ Signifie que le champ ainsi typé est optionnel.
   "emails": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String]  
 }  
 
-### Address
+### `Address`
 
 {  
   "quality": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
