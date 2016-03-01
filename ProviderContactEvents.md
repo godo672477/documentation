@@ -1,6 +1,6 @@
 ## Liste des évènement de l'entité `ProviderContact`
 
-- ProviderContactAdded
+- ProviderContactAdded  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -13,7 +13,7 @@
   "eventType": "ProviderContactAdded"
 }  
 
-- ProviderContactUpdated
+- ProviderContactUpdated  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -26,7 +26,7 @@
   "eventType": "ProviderContactUpdated"  
 }  
 
-- ProviderContactEnabled
+- ProviderContactEnabled  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -35,7 +35,7 @@
   "eventType": "ProviderContactEnabled"  
 }  
 
-- ProviderContactDisabled
+- ProviderContactDisabled  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
