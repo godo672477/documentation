@@ -1,26 +1,35 @@
 ## Liste des évènement de l'entité `Company`
 
 - ClientAccountCanceled  
-case class ClientAccountCanceled(processUid: ProcessUid,
-                                 aggregateUid: AggregateUid,
-                                 sentDate: DateTime,
-                                 canceledDate: LocalDate) extends OtherCompanyEvent
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "canceledDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
+  "companyEventType":"ClientAccountCanceled"  
+}  
 
 - ClientAccountReactivated  
-case class ClientAccountReactivated(processUid: ProcessUid,
-                                    aggregateUid: AggregateUid,
-                                    sentDate: DateTime,
-                                    reactivatedDate: LocalDate) extends OtherCompanyEvent
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "reactivatedDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate)    
+  "companyEventType":"ClientAccountCanceled"
+}  
+
 - ClientAccountUpdated  
-case class ClientAccountUpdated(processUid: ProcessUid,
-                                aggregateUid: AggregateUid,
-                                holdingReference: Option[SafeUUID],
-                                sentDate: DateTime,
-                                updatedDate: LocalDate,
-                                name: String) extends OtherCompanyEvent
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "holdingReference": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid)],    
+  "updatedDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),   
+  "name": String
+  "companyEventType":"ClientAccountUpdated"
+}
 
 - AgencyCreated
-
 {  
   processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -30,15 +39,19 @@ case class ClientAccountUpdated(processUid: ProcessUid,
 }  
 
 - AgencyDeleted  
-case class AgencyDeleted(processUid: ProcessUid,
-                         aggregateUid: AggregateUid,
-                         sentDate: DateTime,
-                         deletedDate: LocalDate,
-                         agencyUid: SafeAgencyUid) extends AgencyEvent
+{  
+  processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  deletedDate: [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
+  agencyUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid)  
+}  
 
 - AgencyUpdated  
-case class AgencyUpdated(processUid: ProcessUid,
-                         aggregateUid: AggregateUid,
-                         sentDate: DateTime,
-                         updatedDate: DateTime,
-                         agency: RawAgency) extends AgencyEvent
+{  
+  processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  updatedDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  agency: [Agency](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#agency)  
+}
