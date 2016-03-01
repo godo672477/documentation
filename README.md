@@ -65,7 +65,7 @@ Cette session a par défaut une durée de vie de 12 h (il faut donc prévoir un 
 
 body
 
-{
+{  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "holdingReference": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[SafeUUID],  
@@ -73,8 +73,8 @@ body
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "createdDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
   "name": String,  
-  "companyEventType":"ClientAccountCreated"
-}
+  "companyEventType":"ClientAccountCreated"  
+}  
 
 #### Incrément de l'entité
 
