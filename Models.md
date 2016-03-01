@@ -47,3 +47,20 @@ Signifie que le champ ainsi typé est optionnel.
   "state": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
   "country": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String])  
 }  
+
+### `Name` *[enum]*
+Name est une énumération, i.e il peut avoir différent format : `data Name = CivilName | PoorName` 
+
+{  
+  "firstName": String,  
+  "lastName": String,  
+  "gender": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)["Male" || "Female"],  
+  "nameType":"CivilName"  
+}  
+
+or
+
+{  
+  "value": String,  
+  "nameType":"PoorName"  
+}  
