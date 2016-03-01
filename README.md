@@ -86,4 +86,56 @@ Dans le body l'évènement que vous souhaitez envoyer.
 
 ## L'entité `ProviderContact`
 
+### Création de l'entité
+
+`POST    /api/vEvent/providerContacts`
+
+body
+
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name),  
+  "phones": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "fax": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "emails": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String]
+  "eventType": "ProviderContactAdded"
+}    
+
+### Incrément de l'entité
+
+`PATCH    /api/vEvent/providerContacts/aggregateUid`
+
+Dans le body l'évènement que vous souhaitez envoyer.
+
+[liste des évènements pour l'entité `ProviderContact`](https://github.com/PerformanceIMMO/documentation/blob/master/ProviderContactEvents.md)
+
+
 ## L'entité `Ticket`
+
+### Création de l'entité
+
+`POST    /api/vEvent/tickets`
+
+body
+
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "holdingReference": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[SafeUUID],  
+  "callCenterReference": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "createdDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
+  "name": String,  
+  "companyEventType":"ClientAccountCreated"  
+}  
+
+### Incrément de l'entité
+
+`PATCH    /api/vEvent/tickets/aggregateUid`
+
+Dans le body l'évènement que vous souhaitez envoyer.
+
+[liste des évènements pour l'entité `Ticket`](https://github.com/PerformanceIMMO/documentation/blob/master/TicketEvent.md)
