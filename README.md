@@ -23,4 +23,9 @@ Nous vous fournissons, plus bas dans ce document, la liste des évènements (ain
 
 ### Précisions sur les entités et sur leurs relations
 
+Les 3 entités Ticket, Company & ProviderContact ont des liens entre elles.
 
+Certains évènements de l'entité `Ticket` ont des dépendances vers les `Company` ou les `ProviderContact`, toujours dans ce sens.
+Cela implique (nous verrons cela plus en détails dans la suite de ce document) de renseigner certaines informations des entités `ProviderContact` & `Company` avant d'envoyer des évènements sur l'entité `Ticket`.
+
+### L'entité `Company`
