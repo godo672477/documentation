@@ -121,16 +121,9 @@ Dans le body l'évènement que vous souhaitez envoyer.
 
 body
 
-{  
-  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "holdingReference": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[SafeUUID],  
-  "callCenterReference": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
-  "createdDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
-  "name": String,  
-  "companyEventType":"ClientAccountCreated"  
-}  
+{
+
+}
 
 ### Incrément de l'entité
 
