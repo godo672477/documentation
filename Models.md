@@ -18,12 +18,12 @@ Signifie que le champ ainsi typé est optionnel.
 
 ### `DateTime`
 
-[ISO-8601 calendar system](https://fr.wikipedia.org/wiki/ISO_8601)
+[ISO-8601 calendar system](https://fr.wikipedia.org/wiki/ISO_8601)  
 `YYYY-MM-DDTHH:mm:ss+02:00` ex: `2016-02-29T12:03:32+02:00`
 
 ### `LocalDate` 
 
-[ISO-8601 calendar system](https://fr.wikipedia.org/wiki/ISO_8601)
+[ISO-8601 calendar system](https://fr.wikipedia.org/wiki/ISO_8601)  
 `YYYY-MM-DD` ex: `2016-02-29`
 
 ### `Agency`
