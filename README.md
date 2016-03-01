@@ -46,7 +46,7 @@ avec dans le body de la requête le json suivant :
 ```
 {
    "login": "test",
-   "password": "anstel"
+   "password": "2Kz4exzL"
 }
 ```
 
