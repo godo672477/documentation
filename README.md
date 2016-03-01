@@ -59,4 +59,20 @@ Cette session a par défaut une durée de vie de 12 h (il faut donc prévoir un 
 
 ### L'entité `Company`
 
-Création de l'entité
+#### Création de l'entité
+
+`POST    /api/vEvent/companies`
+
+body
+```
+{
+  "processUid": SafeUUID,
+  "aggregateUid": SafeUUID,
+  "holdingReference": Option[SafeUUID],
+  "callCenterReference": SafeUUID,
+  "sentDate": DateTime,
+  "createdDate": LocalDate,
+  "name": String
+  "companyEventType":"ClientAccountCreated"
+}
+```
