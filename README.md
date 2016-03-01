@@ -31,14 +31,24 @@ Cela implique (nous verrons cela plus en détails dans la suite de ce document) 
 ### Le host des API
 
 Le host (ou la base url) des API est spécifique à chaque client de performance immo.  
-Pour connaitre votre host pour utiliser les API performance immo, addressez-vous à votre contact technique (sur votre fil slack de préférence).
+Pour connaitre votre host pour utiliser les API performance immo, addressez-vous à votre contact technique (sur votre fil slack de préférence).  
+Toutes les API de performance immo sont uniquement accessible via `https`, garantissant un niveau de sécurité et de confidentialité minimum.  
+Dans toutes la suite du document, nous ne préciserons que les path spécifique à chaque action, sans rappeler à chaque fois le protocole  ou le host (`https://monapi.com`). Pensez-bien de votre côté à toujours rajouter ces informations dans vos requêtes.
 
 ### Authentification
 
 Les API évènementielles de performance immo sont accessible uniquement à des utilisateurs authentifiés.
 Chaque client de performance immo, se voit attribuer un couple `login / password` qui lui servira à s'authentifier.
 
+`POST https://preprod.performance-immo.com/api/vEvent/login`
 
+avec dans le body de la requête le json suivant :
+```
+{
+   "login": "test",
+   "password": "anstel"
+}
+```
 
 ### L'entité `Company`
 
