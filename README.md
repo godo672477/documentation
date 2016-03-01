@@ -83,4 +83,4 @@ body
 
 Dans le body l'évènement que vous souhaitez envoyer.
 
-(list des évènements pour l'entité company)[]
+[liste des évènements pour l'entité `Company`](https://github.com/PerformanceIMMO/documentation/blob/master/CompanyEvents.md)
