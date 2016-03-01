@@ -83,3 +83,7 @@ body
 Dans le body l'évènement que vous souhaitez envoyer.
 
 [liste des évènements pour l'entité `Company`](https://github.com/PerformanceIMMO/documentation/blob/master/CompanyEvents.md)
+
+## L'entité `ProviderContact`
+
+## L'entité `Ticket`
