@@ -2,9 +2,13 @@
 
 ### `SafeUUID`
 
-Identifiant garanti unique en utilisant la norme (GUUID)[https://fr.wikipedia.org/wiki/Globally_Unique_Identifier]  
+Identifiant garanti unique en utilisant la norme [GUUID](https://fr.wikipedia.org/wiki/Globally_Unique_Identifier)  
 *Attention !* Si le format n'est pas bon, l'évènement sera rejeté.  
 ex: `8074964f-c633-3c2a-055f-bbaf8ca8181b`
+
+### List
+
+équivalent d'un array `[]`
 
 ### `Option`
 
@@ -23,11 +27,13 @@ Signifie que le champ ainsi typé est optionnel.
 ### `Agency`
 
 {  
-  "agencyUid": SafeUUID,  
+  "agencyUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "name": String,  
-  "extName": Option[String],  
-  "address": Option[Address],  
-  "phones": List[String],  
-  "fax": Option[String],  
-  "emails": List[String]  
+  "extName": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "address": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[Address]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#address),  
+  "phones": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "fax": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "emails": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String]  
 }  
+
+### Address
