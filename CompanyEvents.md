@@ -29,7 +29,7 @@
   "companyEventType":"ClientAccountUpdated"
 }
 
-- AgencyCreated
+- AgencyCreated  
 {  
   processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
