@@ -28,4 +28,18 @@ Les 3 entités Ticket, Company & ProviderContact ont des liens entre elles.
 Certains évènements de l'entité `Ticket` ont des dépendances vers les `Company` ou les `ProviderContact`, toujours dans ce sens.
 Cela implique (nous verrons cela plus en détails dans la suite de ce document) de renseigner certaines informations des entités `ProviderContact` & `Company` avant d'envoyer des évènements sur l'entité `Ticket`.
 
+### Le host des API
+
+Le host (ou la base url) des API est spécifique à chaque client de performance immo.  
+Pour connaitre votre host pour utiliser les API performance immo, addressez-vous à votre contact technique (sur votre fil slack de préférence).
+
+### Authentification
+
+Les API évènementielles de performance immo sont accessible uniquement à des utilisateurs authentifiés.
+Chaque client de performance immo, se voit attribuer un couple `login / password` qui lui servira à s'authentifier.
+
+
+
 ### L'entité `Company`
+
+Création de l'entité
