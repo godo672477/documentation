@@ -76,3 +76,11 @@ body
   "companyEventType":"ClientAccountCreated"
 }
 ```
+
+#### Incrément de l'entité
+
+`PATCH    /api/vEvent/companies/aggregateUid`
+
+Dans le body l'évènement que vous souhaitez envoyer.
+
+(list des évènements pour l'entité company)[]
