@@ -111,3 +111,12 @@ or
 ### `ContactToCallback` *[enum]*
 
 ### `ClaimNumber` *[enum]*
+
+### `Persona` *[enum]*
+
+### `ContactMedium` *[enum]*
+
+### `Provider` *[enum]*
+
+### `ProviderAssignationPurpose` *[enum]*
+
