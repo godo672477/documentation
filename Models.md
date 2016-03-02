@@ -91,3 +91,17 @@ or
   "name": String,  
   "operatorType":"AnonymousOperator"  
 }  
+
+### TicketInfos
+
+{
+  "caller": [CallerType](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#callertype-enum),
+  "contactToCallback": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[ContactToCallback]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contacttocallback-enum),
+  "claimNumber": [ClaimNumber](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#claimnumber-enum),
+  "address": [Address](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#address),
+  "request": String,
+  "instructions": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],
+  "callPurposeLabel": String,
+  "altCallPurpose": Map[String, List[String]],
+  "additionalData": Map[String, Option[String]])
+}
