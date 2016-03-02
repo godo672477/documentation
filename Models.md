@@ -70,3 +70,5 @@ or
 ### `LocationReference` *[enum]*
 `LocationReference` est une énumération, i.e le type peut avoir différentes valeurs : `data LocationReference = AgencyLocation`
 
+### `Operator` *[enum]*
+`Operator` est une énumération, i.e le type peut avoir différentes valeurs : `data Operator = ReferencedOperator | AnonymousOperator`
