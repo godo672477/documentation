@@ -51,22 +51,30 @@
   "eventType":"ProviderAssigned"  
 }
 
+- `CallAnsweredByProvider`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"CallAnsweredByProvider"  
+}
 
-case class ProviderAnswerCall(processUid: SafeUUID,
-                              aggregateUid: SafeUUID,
-                              provider: Provider,
-                              operator: Operator,
-                              comment: Option[String],
-                              sentDate: DateTime,
-                              date: DateTime) extends OtherTicketCommand
+- `CallNotAnsweredByProvider`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"CallNotAnsweredByProvider"  
+}
 
-case class ProviderNotAnswerCall(processUid: SafeUUID,
-                                 aggregateUid: SafeUUID,
-                                 provider: Provider,
-                                 operator: Operator,
-                                 comment: Option[String],
-                                 sentDate: DateTime,
-                                 date: DateTime) extends OtherTicketCommand
 
 case class AcceptMission(processUid: SafeUUID,
                          aggregateUid: SafeUUID,
