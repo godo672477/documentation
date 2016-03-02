@@ -80,7 +80,7 @@ body
 
 `PATCH    /api/vEvent/companies/aggregateUid`
 
-Dans le body l'évènement que vous souhaitez envoyer.
+Dans le body, mettre l'évènement que vous souhaitez envoyer.
 
 [liste des évènements pour l'entité `Company`](https://github.com/PerformanceIMMO/documentation/blob/master/CompanyEvents.md)
 
@@ -108,7 +108,7 @@ body
 
 `PATCH    /api/vEvent/providerContacts/aggregateUid`
 
-Dans le body l'évènement que vous souhaitez envoyer.
+Dans le body, mettre l'évènement que vous souhaitez envoyer.
 
 [liste des évènements pour l'entité `ProviderContact`](https://github.com/PerformanceIMMO/documentation/blob/master/ProviderContactEvents.md)
 
@@ -121,14 +121,20 @@ Dans le body l'évènement que vous souhaitez envoyer.
 
 body
 
-{
-
-}
+{  
+  processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  locationRef: [LocationReference](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#locationreference-enum),  
+  operator: [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  ticket: [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
+  openedDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime)  
+}  
 
 ### Incrément de l'entité
 
 `PATCH    /api/vEvent/tickets/aggregateUid`
 
-Dans le body l'évènement que vous souhaitez envoyer.
+Dans le body, mettre l'évènement que vous souhaitez envoyer.
 
 [liste des évènements pour l'entité `Ticket`](https://github.com/PerformanceIMMO/documentation/blob/master/TicketEvent.md)
