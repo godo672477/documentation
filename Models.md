@@ -73,21 +73,21 @@ or
 
 {  
   "agencyUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "locationReferenceType":"AgencyLocation"
-}
+  "locationReferenceType":"AgencyLocation"  
+}  
 
 ### `Operator` *[enum]*
 `Operator` est une énumération, i.e le type peut avoir différentes valeurs :  
 `data Operator = ReferencedOperator | AnonymousOperator`
 
-{
+{  
   "operatorUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "operatorType":"ReferencedOperator"
-}
+  "operatorType":"ReferencedOperator"  
+}  
 
 or
 
-{
+{  
   "name": String,  
   "operatorType":"AnonymousOperator"  
 }  
