@@ -12,32 +12,45 @@
   "eventType":"TicketOpened"  
 }
 
-case class EmitCallTo(processUid: SafeUUID,
-                      aggregateUid: SafeUUID,
-                      operator: Operator,
-                      recipient: Persona,
-                      comment: Option[String],
-                      medium: ContactMedium,
-                      sentDate: DateTime,
-                      date: DateTime) extends OtherTicketCommand
+- `CallEmittedTo`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "recipient": [Persona](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#persona-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],
+  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"CallEmittedTo"  
+}
 
-case class ReceiveCall(processUid: SafeUUID,
-                       aggregateUid: SafeUUID,
-                       caller: String,
-                       callPurpose: String,
-                       operator: Operator,
-                       comment: Option[String],
-                       medium: ContactMedium,
-                       sentDate: DateTime,
-                       date: DateTime) extends OtherTicketCommand
+- `CallReceived`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "caller": String,  
+  "callPurpose": String,  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],
+  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"CallReceived"  
+}
 
-case class AssignProvider(processUid: SafeUUID,
-                          aggregateUid: SafeUUID,
-                          operator: Operator,
-                          provider: Provider,
-                          purpose: ProviderAssignationPurpose,
-                          date: DateTime,
-                          sentDate: DateTime) extends OtherTicketCommand
+- `ProviderAssigned`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "purpose": [ProviderAssignationPurpose](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#providerassignationpurpose-enum),  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"ProviderAssigned"  
+}
+
 
 case class ProviderAnswerCall(processUid: SafeUUID,
                               aggregateUid: SafeUUID,
