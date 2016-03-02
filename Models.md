@@ -51,7 +51,7 @@ Signifie que le champ ainsi typé est optionnel.
 }  
 
 ### `Name` *[enum]*
-Name est une énumération, i.e il peut avoir différent format : `data Name = CivilName | PoorName` 
+`Name` est une énumération, i.e le type peut avoir différentes valeurs : `data Name = CivilName | PoorName` 
 
 {  
   "firstName": String,  
@@ -66,3 +66,7 @@ or
   "value": String,  
   "nameType":"PoorName"  
 }  
+
+### `LocationReference` *[enum]*
+`LocationReference` est une énumération, i.e le type peut avoir différentes valeurs : `data LocationReference = AgencyLocation`
+
