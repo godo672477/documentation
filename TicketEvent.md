@@ -1,14 +1,16 @@
 ## Liste des évènement de l'entité `Ticket`
 
-case class OpenTicket(processUid: SafeUUID,
-                      aggregateUid: SafeUUID,
-                      locationRef: LocationReference,
-                      operator: Operator,
-                      sentDate: DateTime,
-                      ticket: TicketInfos,
-                      openedDate: DateTime) extends TicketCommand
-
-sealed trait OtherTicketCommand extends TicketCommand
+- `TicketOpened`
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "locationRef": [LocationReference](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#locationreference-enum),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "ticket": [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
+  "openedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"TicketOpened"
+}
 
 case class EmitCallTo(processUid: SafeUUID,
                       aggregateUid: SafeUUID,
