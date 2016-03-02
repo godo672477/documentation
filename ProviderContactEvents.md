@@ -9,7 +9,7 @@
   "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name),  
   "phones": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
   "fax": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
-  emails: [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String]
+  emails: [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
   "eventType": "ProviderContactAdded"
 }  
 
