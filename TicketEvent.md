@@ -19,8 +19,8 @@
   "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "recipient": [Persona](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#persona-enum),  
-  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],
-  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),  
   "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "eventType":"CallEmittedTo"  
 }
@@ -33,8 +33,8 @@
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "caller": String,  
   "callPurpose": String,  
-  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],
-  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),  
   "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "eventType":"CallReceived"  
 }
