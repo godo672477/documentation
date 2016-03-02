@@ -1,6 +1,6 @@
 ## Liste des évènement de l'entité `Ticket`
 
-- `TicketOpened`
+- `TicketOpened`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -9,7 +9,7 @@
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "ticket": [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
   "openedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
-  "eventType":"TicketOpened"
+  "eventType":"TicketOpened"  
 }
 
 case class EmitCallTo(processUid: SafeUUID,
