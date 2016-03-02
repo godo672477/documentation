@@ -12,7 +12,7 @@
   "eventType":"TicketOpened"  
 }
 
-- `CallEmittedTo`
+- `CallEmittedTo`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -25,7 +25,7 @@
   "eventType":"CallEmittedTo"  
 }
 
-- `CallReceived`
+- `CallReceived`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -39,7 +39,7 @@
   "eventType":"CallReceived"  
 }
 
-- `ProviderAssigned`
+- `ProviderAssigned`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -51,7 +51,7 @@
   "eventType":"ProviderAssigned"  
 }
 
-- `CallAnsweredByProvider`
+- `CallAnsweredByProvider`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -63,7 +63,7 @@
   "eventType":"CallAnsweredByProvider"  
 }
 
-- `CallNotAnsweredByProvider`
+- `CallNotAnsweredByProvider`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
