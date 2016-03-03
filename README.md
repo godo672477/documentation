@@ -41,7 +41,7 @@ Chaque requête Http faite requiert l'envoi de json. N'oubliez pas de spécifier
 Les API évènementielles de performance immo sont accessible uniquement à des utilisateurs authentifiés.
 Chaque client de performance immo, se voit attribuer un couple `login / password` qui lui servira à s'authentifier.
 
-`POST https://preprod.performance-immo.com/api/vEvent/login`
+`POST /api/vEvent/login`
 
 avec dans le body de la requête le json suivant :
 ```
