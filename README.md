@@ -32,7 +32,7 @@ Cela implique (nous verrons cela plus en détails dans la suite de ce document) 
 
 Le host (ou la base url) des API est spécifique à chaque client de performance immo.  
 Pour connaitre votre host pour utiliser les API performance immo, addressez-vous à votre contact technique (sur votre fil slack de préférence).  
-Toutes les API de performance immo sont uniquement accessible via `https`, garantissant un niveau de sécurité et de confidentialité minimum.  
+Toutes les API de performance immo sont uniquement accessible via `https`, garantissant un niveau minimum de sécurité et de confidentialité.  
 Dans toutes la suite du document, nous ne préciserons que les path spécifiques à chaque action, sans rappeler à chaque fois le protocole  ou le host (`https://monapi.com`). Pensez-bien de votre côté à toujours rajouter ces informations dans vos requêtes.  
 Chaque requête Http faite requiert l'envoi de json. N'oubliez pas de spécifier le header `Content-Type: application/json` dans chacune de vos requêtes.
 
