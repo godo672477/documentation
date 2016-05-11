@@ -184,3 +184,5 @@ or
 }
 
 ### `StillOnSite` *[enum]*
+`StillOnSite` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data StillOnSite = Yes | No | NotAsked | ProviderRefuseToReply | NA`
