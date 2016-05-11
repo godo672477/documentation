@@ -76,31 +76,39 @@
 }
 
 - `MissionRefused`  
-case class RefuseMission(processUid: SafeUUID,
-                         aggregateUid: SafeUUID,
-                         provider: Provider,
-                         comment: Option[String],
-                         operator: Operator,
-                         sentDate: DateTime,
-                         date: DateTime) extends OtherTicketCommand
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"MissionRefused"  
+}
 
 - `TicketReopened`  
-case class ReopenTicket(processUid: SafeUUID,
-                        aggregateUid: SafeUUID,
-                        operator: Operator,
-                        purpose: Option[String],
-                        sentDate: DateTime,
-                        date: DateTime) extends OtherTicketCommand
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "purpose": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "eventType":"TicketReopened"  
+}
 
-- `LogTrialAdded`  
-// Evènement générique du journal
-case class AddLogTrial(processUid: SafeUUID,
-                       aggregateUid: SafeUUID,
-                       provider: Option[Provider],
-                       operator: Operator,
-                       sentDate: DateTime,
-                       logTrial: LogTrial,
-                       logTrialAddedDate: DateTime) extends OtherTicketCommand
+- `LogTrialAdded` Évènement générique du journal  
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "provider": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[Provider]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),    
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "logTrial": [LogTrial](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#logtrial),    
+  "logTrialAddedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"LogTrialAdded"  
+}
 
 - `MessageAdded`  
 case class AddMessage(processUid: SafeUUID,
