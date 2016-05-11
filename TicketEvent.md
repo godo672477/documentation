@@ -1,17 +1,5 @@
 ## Liste des évènement de l'entité `Ticket`
 
-- `TicketOpened`  
-{  
-  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  "locationRef": [LocationReference](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#locationreference-enum),  
-  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
-  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
-  "ticket": [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
-  "openedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
-  "eventType":"TicketOpened"  
-}
-
 - `CallEmittedTo`  
 {  
   "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
@@ -75,14 +63,17 @@
   "eventType":"CallNotAnsweredByProvider"  
 }
 
-
-case class AcceptMission(processUid: SafeUUID,
-                         aggregateUid: SafeUUID,
-                         provider: Provider,
-                         comment: Option[String],
-                         operator: Operator,
-                         sentDate: DateTime,
-                         date: DateTime) extends OtherTicketCommand
+- `MissionAccepted`  
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "date": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"MisionAccepted"  
+}
 
 case class RefuseMission(processUid: SafeUUID,
                          aggregateUid: SafeUUID,
@@ -136,12 +127,16 @@ case class GoFromSite(processUid: SafeUUID,
                       sentDate: DateTime,
                       date: DateTime) extends OtherTicketCommand
 
-case class StartIntervention(processUid: SafeUUID,
-                             aggregateUid: SafeUUID,
-                             startedDate: DateTime,
-                             operator: Operator,
-                             provider: Provider,
-                             sentDate: DateTime) extends OtherTicketCommand
+- `InterventionStarted`  
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "startedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"InterventionStarted"  
+}
 
 case class FinishIntervention(processUid: SafeUUID,
                               aggregateUid: SafeUUID,
