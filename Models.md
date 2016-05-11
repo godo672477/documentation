@@ -166,6 +166,23 @@ or
 
 
 ### `Provider` *[enum]*
+`Provider` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data Provider = ReferencedProvider | AnonymousProvider`
+
+{  
+  "providerUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "providerType":"ReferencedProvider"  
+}  
+
+or
+
+{  
+  "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name-enum),  
+  "phones": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "fax": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "emails": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
+  "providerType":"AnonymousProvider"  
+}
 
 ### `ProviderAssignationPurpose` *[enum]*
 `ProviderAssignationPurpose` est une énumération, i.e le type peut avoir différentes valeurs :  
