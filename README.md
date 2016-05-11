@@ -123,13 +123,14 @@ Dans le body, mettre l'évènement que vous souhaitez envoyer.
 body
 
 {  
-  processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
-  locationRef: [LocationReference](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#locationreference-enum),  
-  operator: [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
-  ticket: [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
-  openedDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime)  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "locationRef": [LocationReference](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#locationreference-enum),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "ticket": [TicketInfos](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#ticketinfos),  
+  "openedDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"TicketOpened"  
 }  
 
 ### Incrément de l'entité
