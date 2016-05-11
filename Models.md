@@ -114,7 +114,7 @@ or
   "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name-enum),  
   "medium": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[ContactMedium]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),  
   "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
-  "callerType":"HumanCaller"
+  "callerType":"HumanCaller"  
 }  
 
 or
@@ -128,6 +128,35 @@ or
 ### `Persona` *[enum]*
 
 ### `ContactMedium` *[enum]*
+`ContactMedium` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data ContactMedium = Phone | Fax | Mail | SMS`
+
+{  
+  "phone": [String],  
+  "contactMediumType":"Phone"  
+}  
+
+or
+
+{  
+  "fax": [String],  
+  "contactMediumType":"Fax"  
+}  
+
+or
+
+{  
+  "mail": [String],  
+  "contactMediumType":"Mail"  
+}  
+
+or
+
+{  
+  "phone": [String],  
+  "contactMediumType":"SMS"  
+}  
+
 
 ### `Provider` *[enum]*
 
