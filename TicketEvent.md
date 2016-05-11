@@ -184,15 +184,18 @@ case class ArchiveTicket(processUid: SafeUUID,
                          closingDate: DateTime) extends TicketClosingCommand
 
 - `PermanentlyFixed`  
-case class FixPermanently(processUid: SafeUUID,
-                          aggregateUid: SafeUUID,
-                          provider: Option[Provider],
-                          brakedownNature: Option[String],
-                          stillOnSite: StillOnSite,
-                          report: Option[String],
-                          operator: Operator,
-                          sentDate: DateTime,
-                          closingDate: DateTime) extends TicketClosingCommand
+{  
+  "processUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "operator": [Operator](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#operator-enum),  
+  "brakedownNature": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],    
+  "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "provider": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[Provider]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "stillOnSite": [StillOnSite](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#stillonsite-enum),  
+  "report": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "closingDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "eventType":"PermanentlyFixed"  
+}
 
 - `PartiallyFixed`  
 case class FixPartially(processUid: SafeUUID,
