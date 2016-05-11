@@ -107,6 +107,19 @@ or
 }  
 
 ### `CallerType` *[enum]*
+`CallerType` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data CallerType = HumanCaller | AutomatonCaller`
+
+{  
+  "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name-enum),  
+  "medium": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[ContactMedium]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "callerType":"HumanCaller"
+}  
+
+or
+
+`AutomatonCaller`
 
 ### `ContactToCallback` *[enum]*
 
