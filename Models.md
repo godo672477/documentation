@@ -96,7 +96,7 @@ or
 
 {  
   "caller": [CallerType](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#callertype-enum),  
-  "contactToCallback": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[ContactToCallback]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contacttocallback-enum),  
+  "contactToCallback": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[ContactToCallback]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contacttocallback),  
   "claimNumber": [ClaimNumber](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#claimnumber-enum),  
   "address": [Address](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#address),  
   "request": String,  
@@ -121,7 +121,14 @@ or
 
 `AutomatonCaller`
 
-### `ContactToCallback` *[enum]*
+### `ContactToCallback`
+
+{  
+  "name": String,  
+  "medium": [ContactMedium](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#contactmedium-enum),  
+  "availability": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[DateTime]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
+  "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String]  
+}  
 
 ### `ClaimNumber` *[enum]*
 
@@ -132,28 +139,28 @@ or
 `data ContactMedium = Phone | Fax | Mail | SMS`
 
 {  
-  "phone": [String],  
+  "phone": String,  
   "contactMediumType":"Phone"  
 }  
 
 or
 
 {  
-  "fax": [String],  
+  "fax": String,  
   "contactMediumType":"Fax"  
 }  
 
 or
 
 {  
-  "mail": [String],  
+  "mail": String,  
   "contactMediumType":"Mail"  
 }  
 
 or
 
 {  
-  "phone": [String],  
+  "phone": String,  
   "contactMediumType":"SMS"  
 }  
 
