@@ -75,6 +75,7 @@
   "eventType":"MisionAccepted"  
 }
 
+- `MissionRefused`  
 case class RefuseMission(processUid: SafeUUID,
                          aggregateUid: SafeUUID,
                          provider: Provider,
@@ -83,7 +84,7 @@ case class RefuseMission(processUid: SafeUUID,
                          sentDate: DateTime,
                          date: DateTime) extends OtherTicketCommand
 
-
+- `TicketReopened`  
 case class ReopenTicket(processUid: SafeUUID,
                         aggregateUid: SafeUUID,
                         operator: Operator,
@@ -91,6 +92,7 @@ case class ReopenTicket(processUid: SafeUUID,
                         sentDate: DateTime,
                         date: DateTime) extends OtherTicketCommand
 
+- `LogTrialAdded`  
 // Evènement générique du journal
 case class AddLogTrial(processUid: SafeUUID,
                        aggregateUid: SafeUUID,
@@ -100,6 +102,7 @@ case class AddLogTrial(processUid: SafeUUID,
                        logTrial: LogTrial,
                        logTrialAddedDate: DateTime) extends OtherTicketCommand
 
+- `MessageAdded`  
 case class AddMessage(processUid: SafeUUID,
                       aggregateUid: SafeUUID,
                       operator: Operator,
@@ -107,12 +110,14 @@ case class AddMessage(processUid: SafeUUID,
                       message: String,
                       messageAddedDate: DateTime) extends OtherTicketCommand
 
+- `TicketCanceled`  
 case class CancelTicket(processUid: SafeUUID,
                         aggregateUid: SafeUUID,
                         operator: Operator,
                         sentDate: DateTime,
                         date: DateTime) extends OtherTicketCommand
 
+- `ArrivedOnSite`  
 case class ArriveOnSite(processUid: SafeUUID,
                         aggregateUid: SafeUUID,
                         provider: Provider,
@@ -120,6 +125,7 @@ case class ArriveOnSite(processUid: SafeUUID,
                         sentDate: DateTime,
                         date: DateTime) extends OtherTicketCommand
 
+- `GoneFromSite`    
 case class GoFromSite(processUid: SafeUUID,
                       aggregateUid: SafeUUID,
                       provider: Provider,
@@ -138,6 +144,7 @@ case class GoFromSite(processUid: SafeUUID,
   "eventType":"InterventionStarted"  
 }
 
+- `InterventionFinished`  
 case class FinishIntervention(processUid: SafeUUID,
                               aggregateUid: SafeUUID,
                               finishedDate: DateTime,
@@ -146,10 +153,9 @@ case class FinishIntervention(processUid: SafeUUID,
                               sentDate: DateTime) extends OtherTicketCommand
 
 
-sealed trait TicketClosingCommand extends OtherTicketCommand {
-    def closingDate: DateTime
-}
+### Évènements de clôture
 
+- `TicketClosed`  
 case class CloseTicket(processUid: SafeUUID,
                        aggregateUid: SafeUUID,
                        provider: Option[Provider],
@@ -161,6 +167,7 @@ case class CloseTicket(processUid: SafeUUID,
                        sentDate: DateTime,
                        closingDate: DateTime) extends TicketClosingCommand
 
+-  `TicketArchived`  
 case class ArchiveTicket(processUid: SafeUUID,
                          aggregateUid: SafeUUID,
                          operator: Operator,
@@ -168,6 +175,7 @@ case class ArchiveTicket(processUid: SafeUUID,
                          sentDate: DateTime,
                          closingDate: DateTime) extends TicketClosingCommand
 
+- `PermanentlyFixed`  
 case class FixPermanently(processUid: SafeUUID,
                           aggregateUid: SafeUUID,
                           provider: Option[Provider],
@@ -178,6 +186,7 @@ case class FixPermanently(processUid: SafeUUID,
                           sentDate: DateTime,
                           closingDate: DateTime) extends TicketClosingCommand
 
+- `PartiallyFixed`  
 case class FixPartially(processUid: SafeUUID,
                        aggregateUid: SafeUUID,
                        provider: Option[Provider],
@@ -188,6 +197,7 @@ case class FixPartially(processUid: SafeUUID,
                        sentDate: DateTime,
                        closingDate: DateTime) extends TicketClosingCommand
 
+- `TicketClosedImpossibleRepair`  
 case class CloseTicketImpossibleRepair(processUid: SafeUUID,
                                        aggregateUid: SafeUUID,
                                        provider: Option[Provider],
@@ -198,6 +208,7 @@ case class CloseTicketImpossibleRepair(processUid: SafeUUID,
                                        sentDate: DateTime,
                                        closingDate: DateTime) extends TicketClosingCommand
 
+- `PostponedFix`  
 case class PostponeFix(processUid: SafeUUID,
                        aggregateUid: SafeUUID,
                        provider: Option[Provider],
@@ -208,9 +219,15 @@ case class PostponeFix(processUid: SafeUUID,
                        sentDate: DateTime,
                        closingDate: DateTime) extends TicketClosingCommand
 
+- `ClosedBeyondCallCenterScope`  
 case class CloseBeyondCallCenterScope(processUid: SafeUUID, aggregateUid: SafeUUID, operator: Operator, sentDate: DateTime, closingDate: DateTime) extends TicketClosingCommand
+
+- `ClosedAfterSeveralUnsuccessfulRecalls`  
 case class CloseAfterSeveralUnsuccessfulRecalls(processUid: SafeUUID, aggregateUid: SafeUUID, operator: Operator, sentDate: DateTime, closingDate: DateTime) extends TicketClosingCommand
 
+### Évènements de compensation
+
+- `TicketUpdated`  
 case class UpdateTicket(processUid: SafeUUID,
                         aggregateUid: SafeUUID,
                         operator: Operator,
