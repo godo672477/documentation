@@ -168,5 +168,19 @@ or
 ### `Provider` *[enum]*
 
 ### `ProviderAssignationPurpose` *[enum]*
+`ProviderAssignationPurpose` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data ProviderAssignationPurpose = RecourseChanged | Purpose`
+
+{  
+  "purpose": String,  
+  "providerAssignationPurposeType":"Purpose"  
+}  
+
+or
+
+{  
+  "comment": String,  
+  "providerAssignationPurposeType":"RecourseChanged"  
+}
 
 ### `StillOnSite` *[enum]*
