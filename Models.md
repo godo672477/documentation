@@ -130,7 +130,12 @@ or
   "comment": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String]  
 }  
 
-### `ClaimNumber` *[enum]*
+### `ClaimNumber`
+
+{  
+  "callCenterClaimNumber": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "clientClaimNumber": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String]  
+}  
 
 ### `Persona` *[enum]*
 
