@@ -138,6 +138,22 @@ or
 }  
 
 ### `Persona` *[enum]*
+`Persona` est une énumération, i.e le type peut avoir différentes valeurs :  
+`data Persona = UnClassifiedPersona | ProviderPersona`
+
+{  
+  "name": [Name](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#name-enum),  
+  "status": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "callPurpose": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "personaType":"UnClassifiedPersona"  
+}  
+
+or  
+
+{  
+  "provider": [Provider](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#provider-enum),  
+  "personaType":"ProviderPersona"  
+}  
 
 ### `ContactMedium` *[enum]*
 `ContactMedium` est une énumération, i.e le type peut avoir différentes valeurs :  
