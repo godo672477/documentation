@@ -32,11 +32,24 @@ Signifie que le champ ainsi typé est optionnel.
   "agencyUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "name": String,  
   "extName": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
-  "address": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[Address]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#address),  
+  "address": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[BasicAddress]](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#basicaddress),  
   "phones": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String],  
   "fax": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
   "emails": [List](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#list)[String]  
 }  
+
+### `BasicAddress`
+
+{  
+  "quality": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "number": String,  
+  "street": String,  
+  "complement": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "zipCode": String,  
+  "city": String,  
+  "state": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String],  
+  "country": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[String])  
+}
 
 ### `Address`
 
