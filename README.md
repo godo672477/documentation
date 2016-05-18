@@ -54,7 +54,7 @@ avec dans le body de la requête le json suivant :
 Cette requête retourne une réponse 200 avec un cookie nommé "PLAY_SESSION".  
 Pour pouvoir utiliser ensuite les API évènementielle, il suffit de mettre ce cookie dans chacune de vos requêtes, en utilisant le Header `Cookie` comme valeur cookieName=cookieValue.  
 
-`Cookie: PLAY_SESSION=cookieValue`
+`Cookie: PI_SESSION=cookieValue`
 
 Cette session a par défaut une durée de vie de 12 h (il faut donc prévoir un mécanisme de reconnexion), et un idleTime de 1h (= si pas d'activité pendant 1h, la session expire).
 
