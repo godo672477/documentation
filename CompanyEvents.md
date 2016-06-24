@@ -25,8 +25,8 @@
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "holdingReference": [Option](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#option)[[SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid)],    
   "updatedDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),   
-  "name": String
-  "commandType":"UpdateClientAccount"
+  "name": String,  
+  "commandType":"UpdateClientAccount"  
 }
 
 - CreateAgence  
