@@ -97,7 +97,7 @@ body
   sentDate: DateTime,  
   createdDate: LocalDate,  
   agency: Agency,  
-  commandType:"CreateAgence"  
+  commandType:"CreateAgency"  
 }   
 
 ## L'entité `ProviderContact`
