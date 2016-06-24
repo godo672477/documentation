@@ -29,32 +29,32 @@
   "commandType":"UpdateClientAccount"  
 }
 
-- CreateAgence  
+- CreateAgency  
 {  
   processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   createdDate: [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
   agency: [Agency](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#agency),  
-  commandType:"CreateAgence"  
+  commandType:"CreateAgency"  
 }  
 
-- DeleteAgence  
+- DeleteAgency  
 {  
   processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   deletedDate: [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate),  
   agencyUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
-  commandType:"DeleteAgence"    
+  commandType:"DeleteAgency"    
 }  
 
-- UpdateAgence  
+- UpdateAgency  
 {  
   processUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   aggregateUid: [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   sentDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   updatedDate: [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   agency: [Agency](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#agency),  
-  commandType:"UpdateAgence"    
+  commandType:"UpdateAgency"    
 }
