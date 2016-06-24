@@ -15,7 +15,7 @@
   "aggregateUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "sentDate": [DateTime](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#datetime),  
   "reactivatedDate": [LocalDate](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#localdate)    
-  "commandType":"ReactiveClientAccount"
+  "commandType":"ReactiveClientAccount"  
 }  
 
 - UpdateClientAccount  
