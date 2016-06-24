@@ -85,6 +85,21 @@ Dans le body, mettre l'évènement que vous souhaitez envoyer.
 
 [liste des évènements pour l'entité `Company`](https://github.com/PerformanceIMMO/documentation/blob/master/CompanyEvents.md)
 
+### Création de l'entité Agency
+
+`POST    /api/vEvent/companies/aggregateUid/agencies`
+
+body
+
+{  
+  processUid: SafeUUID,  
+  aggregateUid: SafeUUID,  
+  sentDate: DateTime,  
+  createdDate: LocalDate,  
+  agency: Agency,  
+  commandType:"CreateAgence"  
+}   
+
 ## L'entité `ProviderContact`
 
 ### Création de l'entité
