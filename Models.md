@@ -82,11 +82,18 @@ or
 
 ### `LocationReference` *[enum]*
 `LocationReference` est une énumération, i.e le type peut avoir différentes valeurs :  
-`data LocationReference = AgencyLocation`
+`data LocationReference = AgencyLocation | PatrimonyLocation`
 
 {  
   "agencyUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
   "locationReferenceType":"AgencyLocation"  
+}  
+
+or  
+
+{  
+  "patrimonyUid": [SafeUUID](https://github.com/PerformanceIMMO/documentation/blob/master/Models.md#safeuuid),  
+  "locationReferenceType":"PatrimonyLocation"  
 }  
 
 ### `Operator` *[enum]*
