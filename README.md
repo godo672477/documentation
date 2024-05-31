@@ -1,11 +1,11 @@
 # documentation
-temporary public documentation for performance immo API
+temporary public documentation for Declarimmo API
 
 # API évènementielle
 
 ## Présentation rapide
 
-Performance immo a fait le choix technique d'utiliser des API basées sur le protocole HTTP pour communiquer avec ses différents partenaires.   
+Declarimmo a fait le choix technique d'utiliser des API basées sur le protocole HTTP pour communiquer avec ses différents partenaires.   
 Ainsi nous fournissons plusieurs API pour que nos partenaires puissent nous envoyer les informations nécessaire au fonctionnement de la plateforme avec leurs données clientes.
 
 Aujourd'hui il existe 3 principales entités qui correspondent à 3 API :
@@ -30,16 +30,16 @@ Cela implique (nous verrons cela plus en détails dans la suite de ce document) 
 
 ## Le host des API
 
-Le host (ou la base url) des API est spécifique à chaque client de performance immo.  
-Pour connaitre votre host pour utiliser les API performance immo, addressez-vous à votre contact technique (sur votre fil slack de préférence).  
-Toutes les API de performance immo sont uniquement accessible via `https`, garantissant un niveau minimum de sécurité et de confidentialité.  
+Le host (ou la base url) des API est spécifique à chaque client de Declarimmo.  
+Pour connaitre votre host pour utiliser les API Declarimmo, addressez-vous à votre contact technique (sur votre fil slack de préférence).  
+Toutes les API de Declarimmo sont uniquement accessible via `https`, garantissant un niveau minimum de sécurité et de confidentialité.  
 Dans toute la suite du document, nous ne préciserons que les path spécifiques à chaque action, sans rappeler à chaque fois le protocole  ou le host (`https://monapi.com`). Pensez-bien de votre côté à toujours rajouter ces informations dans vos requêtes.  
 Chaque requête Http faite requiert l'envoi de json. N'oubliez pas de spécifier le header `Content-Type: application/json` dans chacune de vos requêtes.
 
 ## Authentification
 
-Les API évènementielles de performance immo sont accessible uniquement à des utilisateurs authentifiés.
-Chaque client de performance immo, se voit attribuer un couple `login / password` qui lui servira à s'authentifier.
+Les API évènementielles de Declarimmo sont accessible uniquement à des utilisateurs authentifiés.
+Chaque client de Declarimmo, se voit attribuer un couple `login / password` qui lui servira à s'authentifier.
 
 `POST /api/vEvent/login`
 
